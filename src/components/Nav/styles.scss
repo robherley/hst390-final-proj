@@ -1,6 +1,8 @@
+@import '../../style/nord.scss';
+
 .nav {
   width: 300px;
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
@@ -12,12 +14,28 @@
   top: 0;
   left: 0;
 
+  $colors: $nord7 $nord12 $nord15 $nord11 $nord9 $nord8;
+
+  @each $color in $colors {
+    $i: index($colors, $color);
+    .active-#{$i} {
+      color: $color;
+      border-bottom: 2px solid $color;
+    }
+  }
+
+  .inactive {
+    color: rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  }
+
   a {
+    user-select: none;
     width: 100%;
     text-align: right;
-    font-size: 1.4rem;
-    color: white;
-    border-bottom: 2px solid white;
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+    // color: white;
     text-transform: uppercase;
     margin-bottom: 1rem;
     cursor: pointer;
