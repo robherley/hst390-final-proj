@@ -8,14 +8,14 @@ const scrollToRef = ref => {
   });
 };
 
-const Nav = ({ links, currentView }) => (
+const Nav = ({ links, currentPage }) => (
   <nav className="nav">
     {Object.entries(links).map(([name, ref], i) => (
       /* eslint-disable */
       <a
         onClick={() => scrollToRef(ref)}
         key={name}
-        className={currentView === name ? `active-${i + 1}` : 'inactive'}
+        className={currentPage === name ? `active-${i + 1}` : 'inactive'}
       >
         {name}
       </a>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
-import Waypoint from 'react-waypoint';
 
 import Nav from './components/Nav';
 import * as Pages from './pages';
@@ -15,43 +14,40 @@ class App extends Component {
   };
 
   state = {
-    currentView: 'The Project'
+    currentPage: 'The Project'
   };
 
-  changeView = view => this.setState({ currentView: view });
+  componentDidMount = () => {
+    document.addEventListener('scroll', () => {
+      Object.entries(this.pageRefs).forEach(([page, ref]) => {
+        const { top, bottom } = ref.current.getBoundingClientRect();
+        // calc the bounding "page" in the viewport
+        const vis =
+          (Math.min(bottom, window.innerHeight) - Math.max(top, 0)) /
+          window.innerHeight;
+        // see if the page takes up more than 50%
+        if (vis > 0.5) {
+          this.setState({ currentPage: page });
+        }
+      });
+    });
+  };
 
-  genWay = name => (
-    <Waypoint onEnter={() => this.changeView(name)}>
-      <h1>{name}</h1>
-    </Waypoint>
-  );
+  componentWillUnmount = () => {
+    document.removeEventListener('scroll');
+  };
 
   render() {
-    const { currentView } = this.state;
+    const { currentPage } = this.state;
     return (
       <>
-        <Nav links={this.pageRefs} currentView={currentView} />
+        <Nav links={this.pageRefs} currentPage={currentPage} />
         <article className="content">
-          <Pages.Description
-            ref={this.pageRefs['The Project']}
-            waypoint={this.genWay('The Project')}
-          />
-          <Pages.Research
-            ref={this.pageRefs.Research}
-            waypoint={this.genWay('Research')}
-          />
-          <Pages.OurData
-            ref={this.pageRefs['Our Data']}
-            waypoint={this.genWay('Our Data')}
-          />
-          <Pages.Findings
-            ref={this.pageRefs.Findings}
-            waypoint={this.genWay('Findings')}
-          />
-          <Pages.Similar
-            ref={this.pageRefs.Similar}
-            waypoint={this.genWay('Similar')}
-          />
+          <Pages.Description ref={this.pageRefs['The Project']} />
+          <Pages.Research ref={this.pageRefs.Research} />
+          <Pages.OurData ref={this.pageRefs['Our Data']} />
+          <Pages.Findings ref={this.pageRefs.Findings} />
+          <Pages.Similar ref={this.pageRefs.Similar} />
         </article>
       </>
     );

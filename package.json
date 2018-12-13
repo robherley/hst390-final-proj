@@ -44,7 +44,6 @@
     "node-sass": "^4.9.1",
     "nodemon": "^1.17.5",
     "prettier": "^1.13.6",
-    "react-waypoint": "^8.1.0",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "webpack": "^4.12.1",

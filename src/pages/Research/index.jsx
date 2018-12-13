@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Research = React.forwardRef(({ waypoint }, ref) => (
-  <section ref={ref}>
-    {waypoint}
+const Research = React.forwardRef((props, ref) => (
+  <section ref={ref} {...props}>
+    <h1>Research</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolor ipsam
       beatae id et repellat a corrupti! Nostrum eaque molestiae ducimus, non vel

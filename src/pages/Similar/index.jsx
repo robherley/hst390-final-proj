@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Description = React.forwardRef(({ waypoint }, ref) => (
-  <section ref={ref}>
-    {waypoint}
+const Similar = React.forwardRef((props, ref) => (
+  <section ref={ref} {...props}>
+    <h1>Similar</h1>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore rem,
       reprehenderit placeat quam optio illo error exercitationem. Beatae ut
@@ -12,4 +12,4 @@ const Description = React.forwardRef(({ waypoint }, ref) => (
   </section>
 ));
 
-export default Description;
+export default Similar;

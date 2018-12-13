@@ -1,8 +1,8 @@
 import React from 'react';
 
-const OurData = React.forwardRef(({ waypoint }, ref) => (
-  <section ref={ref}>
-    {waypoint}
+const Findings = React.forwardRef((props, ref) => (
+  <section ref={ref} {...props}>
+    <h1>Findings</h1>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore rem,
       reprehenderit placeat quam optio illo error exercitationem. Beatae ut
@@ -12,4 +12,4 @@ const OurData = React.forwardRef(({ waypoint }, ref) => (
   </section>
 ));
 
-export default OurData;
+export default Findings;
