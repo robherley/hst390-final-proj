@@ -15,21 +15,63 @@ body {
 .content {
   margin-left: 300px;
   color: $nord6;
+
   section {
     padding: 3rem;
     box-sizing: border-box;
-    height: 100vh;
+    min-height: 100vh;
 
-    h1 {
-      font-size: 3rem;
+    h2 {
+      font-size: 2rem;
     }
+
+    @each $color in $colors {
+      $i: index($colors, $color);
+      &:nth-child(#{length($colors)}n + #{$i}) {
+        h1 {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          font-size: 3.2rem;
+          color: $color;
+          // &:before {
+          //   content: '\3008 ';
+          //   color: $color;
+          // }
+          // &:after {
+          //   content: ' \3009';
+          //   color: $color;
+          // }
+        }
+      }
+    }
+
     p {
       font-size: 1.5rem;
-      color: rgba($nord6, 0.55);
+      color: rgba($nord6, 0.8);
     }
   }
   @media screen and (max-width: 850px) {
-    margin-top: 60px;
     margin-left: 0;
+    section {
+      padding-top: 6rem;
+    }
   }
+}
+
+.sep {
+  width: 60px;
+  height: 5px;
+  background-color: $nord6;
+}
+
+.i {
+  font-style: italic;
+}
+
+.b {
+  font-weight: bold;
+}
+
+.u {
+  text-decoration: underline;
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="46.004" height="60" viewBox="0, 0, 46.004, 60">
+  <g id="Layer_1">
+    <g>
+      <path d="M7.5,58.5 L41.5,58.5" fill-opacity="0" stroke="#A3BE8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M24.5,58.5 L24.5,19.5" fill-opacity="0" stroke="#A3BE8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M19.5,41.5 C20.567,42.638 22.594,44.063 24.5,47.5" fill-opacity="0" stroke="#A3BE8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M19.5,41.5 C19.5,28.546 14.065,25.5 2.5,25.5 C2.5,38.005 10.142,41.5 19.5,41.5 L19.5,41.5 z" fill-opacity="0" stroke="#A3BE8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M19.5,41.5 C17.104,37.75 14.5,34.875 11.5,33.5" fill-opacity="0" stroke="#A3BE8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M30.5,44.5 C28.625,46.5 26.344,49.03 24.5,52.5" fill-opacity="0" stroke="#A3BE8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M30.5,44.5 C30.5,33.612 35.4,31.5 44.5,31.5 C44.671,42.055 39.925,44.5 30.5,44.5 L30.5,44.5 z" fill-opacity="0" stroke="#A3BE8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M30.5,44.5 C32.094,41.844 33.844,39.656 36.5,38.5" fill-opacity="0" stroke="#A3BE8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M24.5,19.5 C24.529,15.723 25.178,13.341 27.05,10.5" fill-opacity="0" stroke="#A3BE8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M33.5,2.5 C36.047,10.359 29.759,14.903 24.875,15.5 C21.241,10.102 23.75,3.828 33.5,2.5" fill-opacity="0" stroke="#A3BE8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M20.5,24.5 C12.125,24.5 10.5,20.5 10.5,13.5 C18.619,13.368 20.5,17.25 20.5,24.5 L20.5,24.5 z" fill-opacity="0" stroke="#A3BE8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16.5,20.167 L20.5,24.5 C20.5,24.5 24.5,28.5 24.5,31.5" fill-opacity="0" stroke="#A3BE8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M24.5,35.5 C24.5,33.556 26.535,30.632 28.5,28.5 C29.252,27.684 32.031,24.437 34.5,22.5" fill-opacity="0" stroke="#A3BE8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M41.5,15.5 C41.5,27.462 37.618,28.5 28.5,28.5" fill-opacity="0" stroke="#A3BE8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M28.5,28.5 C28.5,16.538 32.382,15.5 41.5,15.5" fill-opacity="0" stroke="#A3BE8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
