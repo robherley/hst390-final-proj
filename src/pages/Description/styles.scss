@@ -6,6 +6,10 @@
   justify-content: center;
   align-items: center;
 
+  h1 {
+    text-align: center;
+  }
+
   .blurb {
     width: 100%;
     max-width: 800px;
@@ -28,6 +32,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    pointer-events: none;
 
     &:hover {
       .hidden {
@@ -36,6 +41,7 @@
     }
 
     h3 {
+      pointer-events: auto;
       text-transform: uppercase;
       color: $nord0;
       background-color: $nord4;
@@ -49,7 +55,7 @@
     .hidden {
       top: 60px;
       position: absolute;
-      width: 100%;
+      width: 80%;
       height: 100%;
       opacity: 0;
       transition: opacity 300ms;
@@ -61,7 +67,7 @@
         margin: 0 auto;
         padding: 1rem;
         border-radius: 6px;
-        text-align: justify;
+        text-align: center;
       }
     }
   }

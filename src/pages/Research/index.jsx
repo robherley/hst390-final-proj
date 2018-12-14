@@ -1,12 +1,21 @@
 import React from 'react';
+import './styles.scss';
 
 const Research = React.forwardRef((props, ref) => (
-  <section ref={ref} {...props}>
+  <section ref={ref} className="research" {...props}>
     <h1>Research</h1>
+    <p>After conducting an anonymous survey with 142 participants...</p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolor ipsam
-      beatae id et repellat a corrupti! Nostrum eaque molestiae ducimus, non vel
-      distinctio suscipit quisquam repudiandae consequatur dolores iure.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+      similique molestiae ullam ad dolorem rerum perspiciatis quod, deleniti
+      itaque illo dicta vel dolore assumenda eveniet odio aut ipsum sunt.
+      Pariatur.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+      similique molestiae ullam ad dolorem rerum perspiciatis quod, deleniti
+      itaque illo dicta vel dolore assumenda eveniet odio aut ipsum sunt.
+      Pariatur.
     </p>
   </section>
 ));

@@ -1,0 +1,59 @@
+@import '../../style/nord.scss';
+
+.data {
+  .chart-container {
+    width: 60%;
+    height: 500px;
+    background-color: $nord1;
+    padding: 1rem;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    font-size: 1.2rem;
+
+    h2 {
+      color: white;
+      height: 10%;
+    }
+
+    .chart {
+      width: 100%;
+      height: 90%;
+      color: black;
+    }
+  }
+
+  .desc {
+    width: 40%;
+    background-color: $nord3;
+    padding: 2rem;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    max-height: calc(500px + 2rem);
+    box-sizing: border-box;
+    overflow: auto;
+
+    p {
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .row {
+    display: flex;
+    margin: 3rem 0;
+  }
+
+  .data-sep {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    &:before {
+      content: '- ';
+    }
+    &:after {
+      content: ' -';
+    }
+  }
+}

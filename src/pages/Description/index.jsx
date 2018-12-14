@@ -22,7 +22,7 @@ const Description = React.forwardRef((props, ref) => (
         <div className="hidden">
           <p>
             Also known as “meat substitutes”, these are usually soy based or
-            from other plant products like peas. Their goal is to Approximates
+            from other plant products like peas. Their goal is to approximate
             certain aesthetic qualities of meat like texture, flavor or
             appearance.
           </p>

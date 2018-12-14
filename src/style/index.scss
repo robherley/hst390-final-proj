@@ -9,7 +9,7 @@
 body {
   font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  background-color: $nord0;
+  background-color: #131519;
 }
 
 .content {
@@ -33,16 +33,16 @@ body {
           margin-bottom: 1rem;
           font-size: 3.2rem;
           color: $color;
-          // &:before {
-          //   content: '\3008 ';
-          //   color: $color;
-          // }
-          // &:after {
-          //   content: ' \3009';
-          //   color: $color;
-          // }
         }
       }
+    }
+
+    &:nth-child(even) {
+      background-color: $nord1;
+    }
+
+    &:nth-child(odd) {
+      background-color: $nord0;
     }
 
     p {
@@ -50,7 +50,7 @@ body {
       color: rgba($nord6, 0.8);
     }
   }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 1000px) {
     margin-left: 0;
     section {
       padding-top: 6rem;
