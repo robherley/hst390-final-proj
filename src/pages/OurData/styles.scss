@@ -9,6 +9,7 @@
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
     font-size: 1.2rem;
+    box-sizing: border-box;
 
     h2 {
       color: white;
@@ -54,6 +55,27 @@
     }
     &:after {
       content: ' -';
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .row {
+      width: 100%;
+      flex-direction: column;
+    }
+    .chart-container {
+      .chart {
+        // width: 60%;
+        margin: 0 auto;
+      }
+      width: 100%;
+      border-top-right-radius: 6px;
+      border-bottom-left-radius: 0px;
+    }
+    .desc {
+      width: 100%;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 6px;
     }
   }
 }

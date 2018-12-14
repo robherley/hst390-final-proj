@@ -12,6 +12,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 900;
 
   @each $color in $colors {
     $i: index($colors, $color);
