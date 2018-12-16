@@ -5,6 +5,9 @@ import Age from './Pies/Age';
 import Gender from './Pies/Gender';
 import Diet from './Pies/Diet';
 import Meat from './Radars/Meat';
+import ChangeMeat from './Pies/ChangeMeat';
+import Awareness from './Bar/Awareness';
+import SynthMeats from './Pies/SynthMeats';
 
 const OurData = React.forwardRef((props, ref) => (
   <section ref={ref} className="data" {...props}>
@@ -48,9 +51,9 @@ const OurData = React.forwardRef((props, ref) => (
     </div>
     <div className="data-sep">Research Questions</div>
     <div className="row">
-      <Age />
+      <Meat />
       <div className="desc">
-        <h3>Why Do People Eat Meat?</h3>
+        <h3>Analysis</h3>
         <p>
           An overwhelming majority (92.2%) of surveyors choose to eat meat
           purely out of personal preference.
@@ -72,9 +75,9 @@ const OurData = React.forwardRef((props, ref) => (
       </div>
     </div>
     <div className="row">
-      <Meat />
+      <ChangeMeat />
       <div className="desc">
-        <h3>Opinions on Consuming Meat</h3>
+        <h3>Analysis</h3>
         <p>
           Our data indicates that it would be a challenge for the majority of
           participating meat eaters to remove meat from their diet.
@@ -82,7 +85,7 @@ const OurData = React.forwardRef((props, ref) => (
         <p>
           A majority of participating meat eaters who would hypothetically
           adjust their meat consumption would do so for personal health and
-          environmental purposes. I surprising minority (18.4%) of participants
+          environmental purposes. A surprising minority (18.4%) of participants
           would adjust their diets for Animal Rights.
         </p>
         <p>
@@ -92,13 +95,43 @@ const OurData = React.forwardRef((props, ref) => (
       </div>
     </div>
     <div className="row">
-      <Diet />
+      <Awareness />
       <div className="desc">
-        <h3>Data Summary</h3>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ipsum
-        magnam quaerat voluptatum adipisci illo harum culpa iure in corrupti.
-        Atque quae suscipit id quis obcaecati? Voluptatibus id consectetur
-        tempore.
+        <h3>Analysis</h3>
+        <p>
+          A majority of the surveyors (54.9%) claimed to be “Very Aware” of the
+          environmental implications of eating meat. A surprisingly 58.9% of
+          them were people who eat meat whereas 41.1% were vegetarians/vegans.
+        </p>
+        <p>
+          Also, 100% of the individuals who were “Not At All Aware” or “Not Very
+          Aware” were meat eaters.
+        </p>
+        <p>
+          Luckily, an overwhelming majority believe beef is the most taxing to
+          the environment, which is true, as the methane from the digestive
+          processes of cattle accounts for one third of the emissions from the
+          Agriculture economic sector.
+        </p>
+      </div>
+    </div>
+    <div className="row">
+      <SynthMeats />
+      <div className="desc">
+        <h3>Analysis</h3>
+        <p>
+          Of the 39 vegetarian and vegans to reply to the survey, just 6 said
+          that they would try, let alone adopt, synthetic meats.
+        </p>
+        <p>
+          Of the 103 meat eaters to reply to the survey, just 10 said that they
+          would not try synthetic meat.
+        </p>
+        <p>
+          A significant portion of vegetarians and vegans have no interest in
+          consuming meat of any kind - or even meat flavored supplements (ex.
+          tofurky).
+        </p>
       </div>
     </div>
   </section>

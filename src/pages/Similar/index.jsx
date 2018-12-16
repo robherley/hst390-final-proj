@@ -1,14 +1,10 @@
 import React from 'react';
+import './styles.scss';
 
 const Similar = React.forwardRef((props, ref) => (
-  <section ref={ref} {...props}>
+  <section ref={ref} className="similar" {...props}>
     <h1>Similar</h1>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore rem,
-      reprehenderit placeat quam optio illo error exercitationem. Beatae ut
-      praesentium quibusdam magnam. Minus recusandae quae hic consequuntur aut.
-      Officiis, atque.
-    </p>
+    <p>(page for links to similar research)</p>
   </section>
 ));
 

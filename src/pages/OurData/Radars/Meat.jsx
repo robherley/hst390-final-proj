@@ -10,41 +10,35 @@ const Meat = () => (
       <ResponsiveRadar
         data={[
           {
-            taste: 'fruity',
-            chardonay: 100,
-            carmenere: 103,
-            syrah: 39
+            reason: 'Personal Preference',
+            Surveyors: 95
           },
           {
-            taste: 'bitter',
-            chardonay: 52,
-            carmenere: 24,
-            syrah: 90
+            reason: 'Natural To Eat',
+            Surveyors: 51
           },
           {
-            taste: 'heavy',
-            chardonay: 44,
-            carmenere: 31,
-            syrah: 113
+            reason: 'Lack of Options',
+            Surveyors: 9
           },
           {
-            taste: 'strong',
-            chardonay: 60,
-            carmenere: 81,
-            syrah: 100
+            reason: 'Convenience',
+            Surveyors: 29
           },
           {
-            taste: 'sunny',
-            chardonay: 33,
-            carmenere: 88,
-            syrah: 73
+            reason: 'Friends and Family',
+            Surveyors: 36
+          },
+          {
+            reason: 'No Reason',
+            Surveyors: 12
           }
         ]}
-        keys={['chardonay', 'carmenere', 'syrah']}
-        indexBy="taste"
+        keys={['Surveyors']}
+        indexBy="reason"
         maxValue="auto"
         margin={{
-          top: 70,
+          top: 40,
           right: 80,
           bottom: 40,
           left: 80
@@ -52,9 +46,9 @@ const Meat = () => (
         curve="catmullRomClosed"
         borderWidth={2}
         borderColor="inherit"
-        gridLevels={5}
+        gridLevels={3}
         gridShape="circular"
-        gridLabelOffset={36}
+        gridLabelOffset={34}
         enableDots
         dotSize={8}
         dotColor="inherit"
@@ -63,7 +57,7 @@ const Meat = () => (
         enableDotLabel
         dotLabel="value"
         dotLabelYOffset={-12}
-        colors="nivo"
+        colors="pastel1"
         colorBy="key"
         fillOpacity={0.1}
         animate
@@ -76,7 +70,7 @@ const Meat = () => (
             anchor: 'top-left',
             direction: 'column',
             translateX: -50,
-            translateY: -40,
+            translateY: -20,
             itemWidth: 80,
             itemHeight: 20,
             itemTextColor: '#FFF',
