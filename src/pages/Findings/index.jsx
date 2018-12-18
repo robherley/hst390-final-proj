@@ -5,8 +5,8 @@ const Findings = React.forwardRef((props, ref) => (
   <section ref={ref} className="findings" {...props}>
     <h1>Findings</h1>
     <p>
-      It doesn&#39;t matter how you cut it - or apparently how you make it make
-      it either - vegetarians and vegans are <span className="i">not</span> into
+      It doesn&#39;t matter how you cut it - or apparently how you make it
+      either - vegetarians and vegans are <span className="i">not</span> into
       meat. Lab grown or otherwise, to many vegetarians and vegans the ethical
       implications of eating meat do not disappear with advances in technology.
       All cultured meats do in fact rely on some sort of living cell to grow
