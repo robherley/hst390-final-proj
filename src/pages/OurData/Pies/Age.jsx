@@ -2,7 +2,7 @@ import React from 'react';
 import { ResponsivePie } from '@nivo/pie';
 
 const Age = () => (
-  <div className="chart-container">
+  <div className="chart-container single">
     <h2>Age</h2>
     <div className="chart">
       <ResponsivePie

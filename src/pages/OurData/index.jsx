@@ -15,39 +15,12 @@ const OurData = React.forwardRef((props, ref) => (
     <div className="data-sep">Demographics</div>
     <div className="row">
       <Age />
-      <div className="desc">
-        <h3>Data Summary</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
-          ipsum magnam quaerat voluptatum adipisci illo harum culpa iure in
-          corrupti. Atque quae suscipit id quis obcaecati? Voluptatibus id
-          consectetur tempore.
-        </p>
-      </div>
     </div>
     <div className="row">
       <Gender />
-      <div className="desc">
-        <h3>Data Summary</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
-          ipsum magnam quaerat voluptatum adipisci illo harum culpa iure in
-          corrupti. Atque quae suscipit id quis obcaecati? Voluptatibus id
-          consectetur tempore.
-        </p>
-      </div>
     </div>
     <div className="row">
       <Diet />
-      <div className="desc">
-        <h3>Data Summary</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
-          ipsum magnam quaerat voluptatum adipisci illo harum culpa iure in
-          corrupti. Atque quae suscipit id quis obcaecati? Voluptatibus id
-          consectetur tempore.
-        </p>
-      </div>
     </div>
     <div className="data-sep">Research Questions</div>
     <div className="row">

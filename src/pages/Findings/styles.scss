@@ -1,5 +1,9 @@
 .findings {
   p {
     margin-bottom: 2rem;
+    width: 100%;
+    max-width: 850px;
+    text-align: justify;
+    text-justify: inter-word;
   }
 }
